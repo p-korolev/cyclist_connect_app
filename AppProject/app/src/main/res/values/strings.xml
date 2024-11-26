@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">SEG2105-Project_grp_33</string>
+
+    <string name="usernameTextField">User Name</string>
+    <string name="passwordTextField">Password</string>
+    <string name="clubNameTextField">Club Name</string>
+    <string name="btnRegisterAccount">Confirm</string>
+    <string name="userlistTextField">Active Users:</string>
+    <string name="eventlistTextField">Active Events:</string>
+    <string name="addNewEvent">Schedule Event</string>
+    <string name="contactInfoBtn">Contact Info</string>
+    <string name="addNewEventType">New Event</string>
+    <string name="newDateText">Enter a new date</string>
+    <string name="newLocationText">Enter a new location</string>
+    <string name="deleteBtn">Delete</string>
+    <string name="updateBtn">Update</string>
+    <string name="newContactName">Enter the name of the Club\'s point of contact</string>
+    <string name="newContactNumber">Enter phone number of Club\'s point of contact</string>
+    <string name="newSocialsLink">Enter a link to Club\'s social media</string>
+    <string name="contactNumberNotAddedTextField">Please add a phone number to contact</string>
+    <string name="linksNotAddedTextField">Please add a link to club\'s socials</string>
+    <string name="newCapacityText">Enter the maximum number of participants.</string>
+    <string name="Search">\"Search\"</string>
+    <string name="SearchClub">\"Search by club name\"</string>
+    <string name="SearchEvent">\"Search by event type\"</string>
+    <string name="searchbar">Search</string>
+    <string name="enrolledParticipantsText">Participants registered to event:</string>
+    <string-array name="accountTypes">
+        <item>Participant</item>
+        <item>Club Owner</item>
+    </string-array>
+
+    <string-array name="eventSearchOptions">
+        <item>Club Name</item>
+        <item>Event Type</item>
+        <item>None</item>
+    </string-array>
+
+</resources>

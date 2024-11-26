@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_action_search"
+        android:title="@string/Search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView">
+    <menu>
+        <item android:id= "@+id/searchByClubName"
+            android:title= "@string/SearchClub"/>
+        <item android:id="@+id/searchByEventType"
+            android:title = "@string/SearchEvent"/>
+
+    </menu>
+
+
+    </item>
+
+
+</menu>

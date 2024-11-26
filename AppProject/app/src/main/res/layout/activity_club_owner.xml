@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ClubOwnerActivity">
+
+    <LinearLayout
+        android:id="@+id/AccountInfoLayout"
+        android:layout_width="388dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/EventsLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/displayedClubNameTextField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="start"
+            android:text="ClubName:"
+            android:textSize="60sp" />
+
+        <TextView
+            android:id="@+id/displayedUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UserName:"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/displayedContactNameTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please add a name of contact" />
+
+        <TextView
+            android:id="@+id/displayedContactNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contactNumberNotAddedTextField" />
+
+        <TextView
+            android:id="@+id/displayedClubLinks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/linksNotAddedTextField" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/EventsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/bottomBtnsLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/AccountInfoLayout">
+
+        <TextView
+            android:id="@+id/eventListTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/eventlistTextField"
+            android:textSize="24sp" />
+
+        <ListView
+            android:id="@+id/activeEventsListView"
+            android:layout_width="415dp"
+            android:layout_height="633dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomBtnsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/EventsLayout">
+
+        <Button
+            android:id="@+id/contactInfoBtn"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:text="@string/contactInfoBtn" />
+
+        <Button
+            android:id="@+id/scheduleNewEventBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/addNewEvent" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
